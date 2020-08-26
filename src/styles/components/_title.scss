@@ -1,0 +1,18 @@
+.title {
+    
+    &.-main {
+        color: $color10;
+        font-family: $openSans;
+        font-weight: 900;
+        line-height: 90%;
+        font-size: 48;
+    }
+
+    &.-excerpt {
+        font-family: $roboto;
+        font-weight: 400;
+        color: $color35;
+        margin-top: 5px;
+        font-size: 22px;
+    }
+}
