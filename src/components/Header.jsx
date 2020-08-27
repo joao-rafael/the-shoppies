@@ -9,7 +9,7 @@ const Header = () => {
             </h1>
             <h2 className='title -excerpt'>
                 Movie awards for entrepreneurs
-            </h2>
+            </h2> 
         </header>
     )
 }

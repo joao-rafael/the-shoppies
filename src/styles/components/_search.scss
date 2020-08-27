@@ -1,0 +1,34 @@
+.search {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+
+    .s-form {
+        
+        .f-label {
+            visibility: hidden; 
+        }
+
+        .f-searchbox {
+            display: block;
+            color: $color35;
+            padding: 15px;
+            border: 2px solid $color36;
+            border-radius: 5px;
+            width: 100%;
+            transition: .3s;
+
+            &:active {
+                transition: .3s;
+                outline: none;
+                border-color: $color35;
+            }
+
+            &:focus {
+                transition: .3s;
+                outline: none;
+                border-color: $color35;
+            }
+        }
+    }
+}

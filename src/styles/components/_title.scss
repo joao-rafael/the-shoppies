@@ -15,4 +15,14 @@
         margin-top: 5px;
         font-size: 22px;
     }
+
+    &.-nominees {
+        margin-top: 5px;
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 400!important;
+        font-size: 48px;
+        color: $color35;
+        line-height: 65px;
+    }
 }
