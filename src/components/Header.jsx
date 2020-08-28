@@ -1,7 +1,6 @@
 import React from 'react';
 
-const Header = () => {
-    return(
+const Header = () => (
         <header className='header'>
             <h1 className='title -main'>
                 The <br/>
@@ -11,7 +10,6 @@ const Header = () => {
                 Movie awards for entrepreneurs
             </h2> 
         </header>
-    )
-}
+);
 
 export default Header;
