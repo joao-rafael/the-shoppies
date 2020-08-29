@@ -15,7 +15,7 @@ function App() {
           <Search/>
           <Nominees/>
         </section>
-      </main>x
+      </main>
     </div>
   );
 }
