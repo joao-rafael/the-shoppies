@@ -20,7 +20,7 @@ const Search = () => {
     useEffect(() => {
         renderResponse(response);
     });
-    
+
     const handleChange = event => {
         setSearchTerm(event.target.value);
     }
@@ -47,7 +47,7 @@ const Search = () => {
             setMovies(res.data.Search);
             setResponse('');
         } 
-        else {
+        else if(res.data.Response === "False"){
             return setMessage('Error... make a valid search')
         }
     }
