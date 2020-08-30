@@ -1,0 +1,60 @@
+.card {
+    &.-movie {
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30%;
+        height: 300px;
+        background-color: $color45;
+        border-radius: 5px;
+
+        .c-row {
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .c-title {
+            color: $color35;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .c-img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 100%;
+            object-fit: cover;
+            height: 200px;
+            
+        }
+
+        .c-button {
+            color: $color20;
+            background-color: $color26;
+            border: none;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 5px;
+            margin-bottom: none;
+
+            &:focus {
+                outline: none;
+                
+            }
+            &:hover {
+                cursor: pointer;
+                background-color: $color25;
+            }
+        }
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
