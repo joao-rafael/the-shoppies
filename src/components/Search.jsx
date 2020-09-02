@@ -87,7 +87,7 @@ const Search = () => {
                     <h2>{message}</h2> :
                     movies.slice(0, 3).map(movie => {
                         console.log(movie);
-                        return <Card title={movie.Title} year={movie.Year} img={movie.Poster}></Card>
+                        return <Card key={movie.imdbID} id={movie.imdbID} title={movie.Title} year={movie.Year} img={movie.Poster}></Card>
                     })
                 }
             </div>
