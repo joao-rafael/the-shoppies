@@ -5,6 +5,7 @@ const Card = props => {
     const [nomineeList, setNominee] = useContext(NomineesContext);
     // eslint-disable-next-line 
     const [selected, setSelected] = React.useState(false);
+    const [disabled, setDisabled] = React.useState(false);
     // {props.title} {props.year} {props.imgURL}
 
     const movie = {
@@ -21,6 +22,7 @@ const Card = props => {
                 break;
             }
         }
+        setDisabled(found);
         return found;
     }
 
@@ -30,7 +32,6 @@ const Card = props => {
             return;
         }
         setSelected(!selected);
-        console.log(`add ${props.title} with id ${props.id}`);
         //pushes to array
         setNominee(current => [...current, movie]);
     }
@@ -41,7 +42,7 @@ const Card = props => {
             <div className="c-row">
                 <h3 className='c-title'>{props.title}, {props.year}</h3>
             </div>
-            <button className='c-button' onClick={nomineeMovie} >
+            <button className='c-button' onClick={nomineeMovie} disabled={selected}>
                 Nominee this <br/>
                 movie
             </button>

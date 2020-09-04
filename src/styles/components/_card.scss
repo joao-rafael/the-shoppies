@@ -47,6 +47,10 @@
                 cursor: pointer;
                 background-color: $color25;
             }
+
+            &:disabled {
+                background-color: $color14;
+            }
         }
 
         &:first-of-type {

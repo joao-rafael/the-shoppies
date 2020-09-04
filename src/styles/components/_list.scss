@@ -1,0 +1,32 @@
+.list {
+    list-style-type: none;
+    padding: 0;
+
+    .l-item {
+        font-family: $openSans;
+        color: $color35;
+        font-size: 20px;
+        font-weight: bold;
+        transition: .3s;
+        margin-bottom: 10px;
+
+        .l-remove {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            color: $color15;
+            transition: .3s;
+
+            &:hover {
+                color: $color17;
+                transition: .3s;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
