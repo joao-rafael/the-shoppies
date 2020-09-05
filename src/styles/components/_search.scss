@@ -41,8 +41,10 @@
 
         .f-button {
             border: none;
-            background-color: $color36;
-            color: $color10;
+            background-color: $color10;
+            color: $color35;
+            font-weight: bold;
+            border: 2px solid $color35;
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
             width: 20%;
@@ -51,6 +53,7 @@
 
             &:hover {
                 background-color: $color35;
+                color: $color10;
                 cursor: pointer;
                 transition: .3s;
             }
@@ -66,5 +69,19 @@
         flex-wrap: wrap;
         flex: 0 1 21%;
         align-content: space-between;
+    }
+
+    @media screen and (max-width: 992px) {
+        width: 100%;
+
+        .s-results {
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+        }
+
+        .s-form {
+            margin-top: 0;
+        }
     }
 }

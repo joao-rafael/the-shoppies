@@ -1,0 +1,19 @@
+.footer {
+    padding: 14px;
+    background-color: $color35;
+    margin-top: -50px;
+    color: $color10;
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+
+    .f-link {
+        color: $color10;
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-top: auto;
+        flex-direction: column;
+    }
+}

@@ -31,10 +31,10 @@ const Search = () => {
 
     const handleSearchTerm = searchTerm => {
         if (searchTerm === '' ) {
-            return setMessage('Search for movies!');
+            return setMessage('Use the searchbox above to search for movies.');
         }
         else if ( searchTerm.length < 3) {
-            return setMessage('Insert 3 or more characters');
+            return setMessage('Insert 3 or more characters.');
         }
     }
 
@@ -48,7 +48,7 @@ const Search = () => {
             setResponse('');
         } 
         else if(res.data.Response === "False"){
-            return setMessage('Error... make a valid search')
+            return setMessage('Error...please make a valid search.')
         }
     }
  
@@ -66,29 +66,30 @@ const Search = () => {
                 <label htmlFor="searchBox" className='f-label'>
                     Search for a movie:
                 </label>
+
                 <input type="text"
                     className='f-searchbox'
                     name='searchBox' 
                     id='searchBox' 
                     onChange={handleChange}
                     placeholder='Search for movie'/>
+
                 <button type='submit' className='f-button'>
                     Search <span role='img' aria-label='magnifying glass'>🔎</span>
                 </button>
             </form>
 
-            <h6 className='title -searchresults'>
-                results:
-            </h6>
-
             <div className="s-results">
                 {
                     movies === '' ?
-                    <h2>{message}</h2> :
-                    movies.slice(0, 3).map(movie => {
-                        console.log(movie);
-                        return <Card key={movie.imdbID} id={movie.imdbID} title={movie.Title} year={movie.Year} img={movie.Poster}></Card>
-                    })
+                        <h2 className='title -advice'>
+                            {message}
+                        </h2> 
+                    :
+                        movies.slice(0, 3).map(movie => {
+                            console.log(movie);
+                            return <Card key={movie.imdbID} id={movie.imdbID} title={movie.Title} year={movie.Year} img={movie.Poster}></Card>
+                        })
                 }
             </div>
         </section>

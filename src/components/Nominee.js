@@ -1,5 +1,5 @@
-import React,  {useContext } from 'react';
-import NomineesContext from './../NomineesContext';
+import React,  {useContext} from 'react';
+import NomineesContext from '../NomineesContext';
 
 const Nominee = props => {
     const [nomineeList, setNominee] = useContext(NomineesContext);

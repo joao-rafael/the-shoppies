@@ -25,4 +25,16 @@
         color: $color35;
         line-height: 65px;
     }
+
+    &.-advice {
+        margin-top: 50px;
+        color: $color15;
+        text-align: left;
+        font-size: 22px;
+    }
+
+    &.-modal {
+        font-size: 22px;
+        color: $color35;
+    }
 }

@@ -8,4 +8,8 @@
     background-size: cover;
     padding: 50px calc((100vw - 992px) / 2);
     height: 200px;
+
+    @media screen and (max-width: 992px) {
+        padding: 50px 2.5vh;
+    }
 }

@@ -1,0 +1,69 @@
+.modal {
+    transition: .3s;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .m-background {
+        position: fixed;
+        display: block; 
+        overflow: auto; 
+        width: 100%; 
+        height: 100vh; 
+        top: 0; 
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color20,0.5); 
+        z-index: 999; 
+    }
+
+    .m-content {
+        transition: .3s;
+        margin: 15% auto;
+        background-color: $color45;
+        width: 50vw;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .m-title {
+            margin-top: 5px;
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: 400!important;
+            font-size: 32px;
+            color: $color20;
+            line-height: 65px;
+        }
+
+        .m-list {
+            margin-bottom: 10px;
+            .item {
+                color: $color15;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+        }
+
+        .m-button {
+            padding: 20px;
+            text-align: center;
+            color: $color10;
+            background-color: $color35;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .m-content {
+            width: 80vw;
+        }
+    }
+}

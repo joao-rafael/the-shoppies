@@ -1,12 +1,8 @@
-import React,  { useState, useContext } from 'react';
-import NomineesContext from './../NomineesContext';
+import React,  { useContext } from 'react';
+import NomineesContext from '../NomineesContext';
 
 const Card = props => {
     const [nomineeList, setNominee] = useContext(NomineesContext);
-    // eslint-disable-next-line 
-    const [selected, setSelected] = React.useState(false);
-    const [disabled, setDisabled] = React.useState(false);
-    // {props.title} {props.year} {props.imgURL}
 
     const movie = {
         title: props.title,
@@ -22,17 +18,13 @@ const Card = props => {
                 break;
             }
         }
-        setDisabled(found);
         return found;
     }
 
     const nomineeMovie = () => {
         if(check()) {
-            console.log('movie already in list');
             return;
         }
-        setSelected(!selected);
-        //pushes to array
         setNominee(current => [...current, movie]);
     }
 
@@ -42,7 +34,7 @@ const Card = props => {
             <div className="c-row">
                 <h3 className='c-title'>{props.title}, {props.year}</h3>
             </div>
-            <button className='c-button' onClick={nomineeMovie} disabled={selected}>
+            <button className='c-button' onClick={nomineeMovie} disabled={check()}>
                 Nominee this <br/>
                 movie
             </button>
