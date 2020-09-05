@@ -6,7 +6,7 @@ const Head = () => (
         <meta charSet="utf-8"/>
         <meta http-equiv="Content-Language" content="en"/>
         <title>The Shoppies</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+        <link rel="canonical" href="https://the-shoppies-challenge.netlify.app/" />
     </Helmet>
 );
 

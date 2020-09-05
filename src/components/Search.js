@@ -3,7 +3,7 @@ import axios from 'axios';
 import Card from './Card';
 
 
-const url = 'http://www.omdbapi.com/?apikey=2c21e7b7&s=';
+const url = 'https://www.omdbapi.com/?apikey=2c21e7b7&s=';
 const api = axios.create({
     baseURL: url,
     params: {
