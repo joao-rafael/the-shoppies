@@ -1,9 +1,7 @@
-import React, { useContext, useState }  from 'react';
+import React, { useContext }  from 'react';
 import NomineesContext from '../NomineesContext';
-import Nominee from './Nominee';
 
 const Modal = props => {
-    const [visible, setVisible] = useState(false);
     const [nomineeList, setNominee] = useContext(NomineesContext);
 
     const close = () => {

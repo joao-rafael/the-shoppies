@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Head from './components/Head';
 import Header from './components/Header';
 import Search from './components/Search';

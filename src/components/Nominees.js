@@ -3,7 +3,7 @@ import NomineesContext from '../NomineesContext';
 import Nominee from './Nominee';
 
 const Nominees = () => {
-    const [nomineeList, setNominee] = useContext(NomineesContext);
+    const [nomineeList] = useContext(NomineesContext);
     
     return(
         <section className='nominees'>
