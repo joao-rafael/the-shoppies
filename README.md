@@ -1,5 +1,9 @@
 # The Shoppies
 
+### observation:
+I missplaced the link at the application proccess - instead of putting the link from this repository, inserted the link from the running app. <br>
+Please forgive me about this mistake. 
+
 This repository contains code to the Shopify's winter internship 2021 challenge. <br>
 It consists of a web client app for [The Open Movie Database API](http://www.omdbapi.com/).
 
